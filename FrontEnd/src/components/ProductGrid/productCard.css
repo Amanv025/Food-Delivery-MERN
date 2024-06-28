@@ -1,0 +1,110 @@
+.product-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Enable positioning for absolute elements */
+}
+
+.image-container {
+  position: relative; /* Enable positioning for absolute elements */
+  border-radius: 8px;
+  overflow: hidden; /* Ensure image is contained within rounded corners */
+}
+.item-count-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  width: 40px; /* Adjust size of the button as needed */
+  height: 40px; /* Adjust size of the button as needed */
+  border-radius: 50%; /* Make the button circular */
+  background-color: #007bff; /* Example background color */
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-count-container {
+  position: absolute;
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+  display: flex;
+  align-items: center;
+}
+
+.item-count {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+.add-button,
+.subtract-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Make buttons circular */
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-button:hover,
+.subtract-button:hover {
+  background-color: #0056b3;
+}
+
+/* Preserve original styling for name-and-price and restaurant-and-time */
+.product-name {
+  font-size: 42px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: wheat;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: wheat;
+  margin: 0;
+}
+
+.restaurant-and-time {
+  display: flex;
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center;
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+.restaurant-name {
+  font-size: 18px;
+  color: white;
+  margin: 0; /* Reset margin */
+}
+
+.delivery-time {
+  font-size: 16px;
+  color: white;
+  margin: 0; /* Reset margin */
+}
+
+
